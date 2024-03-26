@@ -1,1 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;400;600&family=Protest+Riot&family=Protest+Strike&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:wght@300&family=Open+Sans:wght@300;400;600&family=Protest+Riot&family=Protest+Strike&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* COLORS */
+    --BACKGROUND-COLOR: rgb(99, 69, 25);
+    --BANNERCOLOR: rgb(192, 106, 181);
+   /*  --BACKGROUND-IMAGE: radial-gradient(rgb(44, 31, 75),rebeccapurple); */
+   --BACKGROUND-IMAGE: radial-gradient(rgba(88, 78, 86, 0.795),rebeccapurple); 
+    --BOX-COLOR: #eedcdc;
+    --TEXT-COLOR: #d4904f;
+    --HOME-PAGE-TEXT-COLORS: rgb(60, 156, 57);
+    --HEADERFOOTER-COLOR: rgb(21, 67, 99);
+    --NAV-COLOR: rgb(218, 155, 74);
+    --BOX-SHADOW-COLOR: 0 0 0px 10px rgb(44, 5, 39);
+    --HOVER-LINK-COLOR: hotpink;
+    
+}
+
+/* flex container controls how its children are layed out, default its set to row */
+    /* main axis starts at the left and the cross axis starts at the top */
+    /* Each item takes up 1 unit of space. */
+    /* justify content spaces the elements apart*/
+    /* flex direction column switches the flex direction to the opposite */
+  
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    min-height: 100vh;
+    padding: 15px;
+    color: var(--TEXT-COLOR);
+    background-color: var(--BACKGROUND-COLOR);
+    background-image: var(--BACKGROUND-IMAGE);
+
+}
+
+
+
+
+
+header{
+    text-align: center;
+    color: var(--BANNERCOLOR);
+    font-size: 2rem;
+
+    
+}
+/*container
+    <main>
+
+    </main>
+    display grid think of an excel spreadsheet.
+
+*/
+
+/*For the homepage */
+.home_page_container{
+    
+    max-width: 800px;
+    min-height: 400px;
+    width: 100%;
+    margin-inline: auto;
+    border: 3px solid #000;
+    border-radius: 35px;
+    box-shadow: 0 0 80px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    /* background-image: url(../img/eye2.jpg); */
+    background: url(/ResidentEvil_2_Guide/img/Resident_Evil_2_Banner.jpeg) 
+    /*no repeat on the background when scrolling and center center will center it on the page */
+    no-repeat fixed center center;
+    /*Shrink the background size. */
+    background-size: 100%;
+    transform: scale(1,1);
+    transform: translate(12px);
+    
+    
+}
+
+
+
+.locker_combinations_container{
+    /* display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+    flex-flow: wrap; 
+    font-size: 1.5rem;
+    color: var(--TEXT-COLOR);
+    padding: 15px;   */
+    margin: 1.5rem;
+    border: solid  var(--BANNERCOLOR);
+    border-radius: 200px;
+    box-shadow: 0 0 80px;
+    width: 95%;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.statue-table-container{
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+    flex-flow: wrap; 
+    font-size: 2rem;
+    color: var(--TEXT-COLOR);
+    padding: 15px;  
+}
+
+u{
+    color: var(--BANNERCOLOR);
+}
+
+
+  td {
+    padding: 13px;
+    font-size: 2rem;
+  }
+
+/* .locker_combinations_table{
+    
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    color: aquamarine;
+    font-size: 2rem;
+
+} */
+/*For the Statue Codes page */
+.statue-table-container{
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+    flex-flow: wrap; 
+    font-size: 1.5rem;
+    color: var(--TEXT-COLOR);
+    padding: 15px;  
+}
+/*For the Plug Table page */
+.plug_table_container{
+    display: flex;
+    place-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-flow: wrap; 
+    font-size: 1.5rem;
+    color: var(--TEXT-COLOR);
+}
+/*For the Plug Table page */
+.plug_table{
+  height: auto;
+  font-size: 1.5rem;
+  color: var(--TEXT-COLOR);
+}
+
+.safe_table_container{
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+    /*Make items wrap if necessary */
+    flex-flow: wrap; 
+    padding: 20px;
+    
+}
+
+.safe_table{
+    height: auto;
+    font-size: 1.5rem;
+    color: var(--PARAGRAPH-COLOR);
+    
+    
+}
+
+
+/*For the  Plant 43 Solution*/
+.green_house_container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    place-content: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: var(--TEXT-COLOR);
+    
+}
+
+
+.plant_43_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 0 2px;
+    font-size: 1.5rem;
+   
+    
+}
+
+.plant_43_table{
+    color: var(--TEXT-COLOR);
+}
+
+.plant_43_table_green{
+    color: green;
+}
+
+.plant_43_table_blue{
+    color: blue;
+}
+
+.plant_43_table_red{
+    color: red;
+}
+
+
+
+   
+
+/*Box for homepage */
+.box{
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 250px;
+}
+
+a{
+    color: var(--HOME-PAGE-TEXT-COLORS);
+    
+    text-decoration: none;
+}
+
+a:hover{
+    
+    color: var(--HOVER-LINK-COLOR);
+}
+
+
+
+.heading_font{ 
+    padding: 3rem;
+    border-radius: 3rem;
+    background: #000;
+    box-shadow:  var(--BOX-SHADOW-COLOR);
+}
+
+.description{
+    
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--PARAGRAPH-COLOR);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+}
+p{
+   
+    font-family: "Protest Strike", sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    min-height: 100%;
+    padding: 3px;
+    border: 3px double grey;
+    box-shadow: 3px 0px 0px 5px;
+    border-radius: 35px;
+    transition: scale(1.9);
+    color: #000;
+    position: auto;
+}
+    
+
+
+
+header{
+    top: 0;
+}
+
+@media screen and (min-width: 375px) {
+    /*margin: 25px 50px top and bottom margins are 20px.
+    right and left margins are -5px */
+    .description{
+       margin: 20px -5px;
+       text-align: center;
+       letter-spacing: 0.1rem;
+    }
+
+    .box{
+        font-size: 1.2rem;
+    }
+    
+    td{
+        font-size: 1.3rem;
+    }
+
+    
+
+    .green_house_container{
+        font-size: 1.5rem;
+    }
+        
+    
+    img{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .box{
+        font-size: 1.5rem;
+    }
+    
+     
+    .description{
+        
+        font-size: 2rem;
+    }
+
+    .home_page_container{
+    /* background-size: 100%;
+    transform: scale(1,1);
+    transform: translate(12px);
+    width: auto; */
+    background-size: 100%;
+    transform: scale(1,1);
+    transform: translate(12px);
+    
+    }
+
+    img{
+        width: 200px;
+        padding: 2px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    img{
+        width: 500px;
+        height: 450px;
+        padding: 2px;
+    }
+    .home_page_container{
+        padding: 10px;
+        
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    
+}
+
+/* @media screen and (min-width: 375px) {
+    .home_page_container{
+    background-image: 100%;
+    background: auto;
+
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .home_page_container{
+    background-size: 100%;
+    
+    }
+} */
+
+
+
 
